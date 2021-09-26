@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DD686E5627011B030074E618 /* iTunesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD686E5527011B030074E618 /* iTunesModel.swift */; };
 		DD686E5827011E640074E618 /* AppEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD686E5727011E640074E618 /* AppEntryRow.swift */; };
-		DD686E5A270121090074E618 /* ImageForBundleId.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD686E59270121090074E618 /* ImageForBundleId.swift */; };
 		DDB8050F2700F1C400B3901E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD56CAB2700AF1300B63266 /* Assets.xcassets */; };
 		DDB805112700F9A400B3901E /* Logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = DDB805102700F9A400B3901E /* Logo.icns */; };
 		DDD56CA62700AF1100B63266 /* AppActivityViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD56CA52700AF1100B63266 /* AppActivityViewerApp.swift */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		DD686E5527011B030074E618 /* iTunesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesModel.swift; sourceTree = "<group>"; };
 		DD686E5727011E640074E618 /* AppEntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntryRow.swift; sourceTree = "<group>"; };
-		DD686E59270121090074E618 /* ImageForBundleId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageForBundleId.swift; sourceTree = "<group>"; };
 		DDB805102700F9A400B3901E /* Logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Logo.icns; sourceTree = SOURCE_ROOT; };
 		DDD56CA22700AF1100B63266 /* AppActivityViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppActivityViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD56CA52700AF1100B63266 /* AppActivityViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppActivityViewerApp.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				DDB805102700F9A400B3901E /* Logo.icns */,
 				DD686E5527011B030074E618 /* iTunesModel.swift */,
 				DD686E5727011E640074E618 /* AppEntryRow.swift */,
-				DD686E59270121090074E618 /* ImageForBundleId.swift */,
 			);
 			path = AppActivityViewer;
 			sourceTree = "<group>";
@@ -166,7 +163,6 @@
 			files = (
 				DDD56CA62700AF1100B63266 /* AppActivityViewerApp.swift in Sources */,
 				DDD56CA82700AF1100B63266 /* AppActivityViewerDocument.swift in Sources */,
-				DD686E5A270121090074E618 /* ImageForBundleId.swift in Sources */,
 				DDD56CB92700DB5900B63266 /* AppEntry.swift in Sources */,
 				DDD56CAA2700AF1100B63266 /* ContentView.swift in Sources */,
 				DDD56CB72700C7C300B63266 /* Model.swift in Sources */,
