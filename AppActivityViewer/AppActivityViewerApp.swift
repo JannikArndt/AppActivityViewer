@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct AppActivityViewerApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        DocumentGroup(viewing: AppActivityViewerDocument.self) { file in
+            ContentView(document: file.$document)
         }
     }
 }
