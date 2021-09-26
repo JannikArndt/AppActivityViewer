@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+## App Activity Viewer
 
-You can use the [editor on GitHub](https://github.com/JannikArndt/AppActivityViewer/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A viewer for the iOS 15 "Record App Activity" export.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<img src="https://github.com/JannikArndt/AppActivityViewer/raw/main/Logo.png" width="200">
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Background
 
-```markdown
-Syntax highlighted code block
+* Apple's original announcement: https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/
+* iOS 15 release notes: https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-15-release-notes#Privacy
+* Developer Documentation: https://developer.apple.com/documentation/foundation/urlrequest/inspecting_app_activity_data
 
-# Header 1
-## Header 2
-### Header 3
+### Privacy
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JannikArndt/AppActivityViewer/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+The app is intended to display sensitive, personal data: the usage of the apps on your iPhone. 
+For this reason, it only displays this information and processes it on the device. 
+No data is sent to any server, at any time. 
+The app also contains no tracking and sends no logs.
