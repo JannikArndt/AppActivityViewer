@@ -29,7 +29,7 @@ struct Entry: Codable, Hashable {
             return false
         }
     }
-    
+
     func hash(into hasher: inout Hasher) {
         hasher.combine(identifier)
         hasher.combine(domain)
@@ -46,6 +46,9 @@ struct Entry: Codable, Hashable {
             return ""
         }
     }
+
+    var isAccess: Bool { return type == .access }
+    var isNetwork: Bool { return type == .networkActivity }
 
     let accessor: AppIdentifier?
     let broadcaster: AppIdentifier? // Only present for screen recording.

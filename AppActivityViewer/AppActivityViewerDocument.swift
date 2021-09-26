@@ -15,10 +15,12 @@ extension UTType {
 }
 
 struct AppActivityViewerDocument: FileDocument {
-    var text: String
+    var entries: [Entry]
+    var apps: [String: [Entry]]
 
-    init(text: String = "Hello, world!") {
-        self.text = text
+    init() {
+        entries = []
+        apps = [:]
     }
 
     static var readableContentTypes: [UTType] { [.ndjson] }
@@ -29,11 +31,29 @@ struct AppActivityViewerDocument: FileDocument {
         else {
             throw CocoaError(.fileReadCorruptFile)
         }
-        text = string
+
+        let lines = string.split(whereSeparator: \.isNewline)
+        let result: [Entry] = lines.compactMap { line in
+            do {
+                if let data = line.data(using: .utf8) {
+                    let entry: Entry = try JSONDecoder().decode(Entry.self, from: data)
+                    return entry
+                } else {
+                    print("couldn't read utf8 from line \(line)")
+                    return nil
+                }
+            } catch {
+                print("Error: \(error)")
+                return nil
+            }
+        }
+
+        entries = result
+        apps = Dictionary(grouping: entries, by: \.app)
+        print("Read \(result.count) entries")
     }
 
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
-        let data = text.data(using: .utf8)!
-        return .init(regularFileWithContents: data)
+        throw CocoaError(.fileWriteNoPermission)
     }
 }

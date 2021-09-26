@@ -13,6 +13,8 @@
 		DDD56CAC2700AF1300B63266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD56CAB2700AF1300B63266 /* Assets.xcassets */; };
 		DDD56CAF2700AF1300B63266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD56CAE2700AF1300B63266 /* Preview Assets.xcassets */; };
 		DDD56CB72700C7C300B63266 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD56CB62700C7C300B63266 /* Model.swift */; };
+		DDD56CB92700DB5900B63266 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD56CB82700DB5900B63266 /* AppEntry.swift */; };
+		DDD56CBB2700E4F900B63266 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD56CBA2700E4F900B63266 /* DateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DDD56CAE2700AF1300B63266 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDD56CB02700AF1300B63266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDD56CB62700C7C300B63266 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DDD56CB82700DB5900B63266 /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
+		DDD56CBA2700E4F900B63266 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DDD56CB02700AF1300B63266 /* Info.plist */,
 				DDD56CAD2700AF1300B63266 /* Preview Content */,
 				DDD56CB62700C7C300B63266 /* Model.swift */,
+				DDD56CB82700DB5900B63266 /* AppEntry.swift */,
+				DDD56CBA2700E4F900B63266 /* DateExtensions.swift */,
 			);
 			path = AppActivityViewer;
 			sourceTree = "<group>";
@@ -147,8 +153,10 @@
 			files = (
 				DDD56CA62700AF1100B63266 /* AppActivityViewerApp.swift in Sources */,
 				DDD56CA82700AF1100B63266 /* AppActivityViewerDocument.swift in Sources */,
+				DDD56CB92700DB5900B63266 /* AppEntry.swift in Sources */,
 				DDD56CAA2700AF1100B63266 /* ContentView.swift in Sources */,
 				DDD56CB72700C7C300B63266 /* Model.swift in Sources */,
+				DDD56CBB2700E4F900B63266 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
