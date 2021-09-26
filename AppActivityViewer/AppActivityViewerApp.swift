@@ -30,4 +30,24 @@ struct AppActivityViewerApp: App {
             }
         }
     }
+    
+    func getUrl(identifier: String?) async -> URL? {
+        guard let identifier = identifier,
+              let url = URL(string: "http://itunes.apple.com/lookup?bundleId=\(identifier)")
+        else {
+            return nil
+        }
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let iTunesEntry: iTunesResponse = try JSONDecoder().decode(iTunesResponse.self, from: data)
+            if let urlString = iTunesEntry.results.first?.artworkUrl60 {
+                return URL(string: urlString)
+            }
+        } catch {
+            print("Error loading icon: \(error)")
+            return nil
+        }
+        return nil
+    }
 }
