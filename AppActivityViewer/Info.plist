@@ -5,10 +5,10 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeIconFile</key>
+			<string>Logo.icns</string>
 			<key>CFBundleTypeName</key>
 			<string>App Privacy Report</string>
-            <key>CFBundleTypeIconFile</key>
-            <string>Logo.icns</string>
 			<key>LSHandlerRank</key>
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
