@@ -115,3 +115,13 @@ struct AppIdentifier: Codable {
         case identifierType
     }
 }
+
+extension Array where Element == Entry {
+    func countNetworkRequests() -> Int {
+        reduce(0) { $1.isNetwork ? $0 + 1 : $0 }
+    }
+
+    func countAccessRequests() -> Int {
+        reduce(0) { $1.isAccess ? $0 + 1 : $0 }
+    }
+}
