@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDB8050F2700F1C400B3901E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD56CAB2700AF1300B63266 /* Assets.xcassets */; };
+		DDB805112700F9A400B3901E /* Logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = DDB805102700F9A400B3901E /* Logo.icns */; };
 		DDD56CA62700AF1100B63266 /* AppActivityViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD56CA52700AF1100B63266 /* AppActivityViewerApp.swift */; };
 		DDD56CA82700AF1100B63266 /* AppActivityViewerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD56CA72700AF1100B63266 /* AppActivityViewerDocument.swift */; };
 		DDD56CAA2700AF1100B63266 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD56CA92700AF1100B63266 /* ContentView.swift */; };
-		DDD56CAC2700AF1300B63266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD56CAB2700AF1300B63266 /* Assets.xcassets */; };
 		DDD56CAF2700AF1300B63266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD56CAE2700AF1300B63266 /* Preview Assets.xcassets */; };
 		DDD56CB72700C7C300B63266 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD56CB62700C7C300B63266 /* Model.swift */; };
 		DDD56CB92700DB5900B63266 /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD56CB82700DB5900B63266 /* AppEntry.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDB805102700F9A400B3901E /* Logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Logo.icns; sourceTree = SOURCE_ROOT; };
 		DDD56CA22700AF1100B63266 /* AppActivityViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppActivityViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD56CA52700AF1100B63266 /* AppActivityViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppActivityViewerApp.swift; sourceTree = "<group>"; };
 		DDD56CA72700AF1100B63266 /* AppActivityViewerDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppActivityViewerDocument.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				DDD56CB62700C7C300B63266 /* Model.swift */,
 				DDD56CB82700DB5900B63266 /* AppEntry.swift */,
 				DDD56CBA2700E4F900B63266 /* DateExtensions.swift */,
+				DDB805102700F9A400B3901E /* Logo.icns */,
 			);
 			path = AppActivityViewer;
 			sourceTree = "<group>";
@@ -139,8 +142,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB8050F2700F1C400B3901E /* Assets.xcassets in Resources */,
 				DDD56CAF2700AF1300B63266 /* Preview Assets.xcassets in Resources */,
-				DDD56CAC2700AF1300B63266 /* Assets.xcassets in Resources */,
+				DDB805112700F9A400B3901E /* Logo.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +286,12 @@
 		DDD56CB42700AF1300B63266 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppActivityViewer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "AppActivityViewer/Assets.xcassets AppActivityViewer/Preview\\ Content";
 				DEVELOPMENT_TEAM = 9MD9DV36EY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -316,12 +320,12 @@
 		DDD56CB52700AF1300B63266 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppActivityViewer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "AppActivityViewer/Assets.xcassets AppActivityViewer/Preview\\ Content";
 				DEVELOPMENT_TEAM = 9MD9DV36EY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

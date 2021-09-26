@@ -7,6 +7,8 @@
 		<dict>
 			<key>CFBundleTypeName</key>
 			<string>App Privacy Report</string>
+            <key>CFBundleTypeIconFile</key>
+            <string>Logo.icns</string>
 			<key>LSHandlerRank</key>
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
@@ -27,7 +29,9 @@
 			<key>UTTypeDescription</key>
 			<string>App Privacy Report</string>
 			<key>UTTypeIconFiles</key>
-			<array/>
+			<array>
+				<string>Logo.icns</string>
+			</array>
 			<key>UTTypeIdentifier</key>
 			<string>de.jannikarndt.appprivacyreport</string>
 			<key>UTTypeTagSpecification</key>
