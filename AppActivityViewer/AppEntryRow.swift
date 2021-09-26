@@ -31,14 +31,14 @@ struct AppEntryRow: View {
                 }
 
                 HStack(alignment: .center, spacing: 10) {
-                    LabelledNumber(category: "network", number: collection.filter { $0.isNetwork }.count)
-                    LabelledNumber(category: "photo.on.rectangle", number: collection.filter { $0.category == .photos }.count)
-                    LabelledNumber(category: "camera", number: collection.filter { $0.category == .camera }.count)
-                    LabelledNumber(category: "mic", number: collection.filter { $0.category == .microphone }.count)
-                    LabelledNumber(category: "person.3", number: collection.filter { $0.category == .contacts }.count)
-                    LabelledNumber(category: "music.note.house", number: collection.filter { $0.category == .mediaLibrary }.count)
-                    LabelledNumber(category: "location", number: collection.filter { $0.category == .location }.count)
-                    LabelledNumber(category: "record.circle", number: collection.filter { $0.category == .screenRecording }.count)
+                    LabelledNumber(category: "network", number: collection.countNetworkRequests())
+                    LabelledNumber(category: "photo.on.rectangle", number: collection.count(.photos))
+                    LabelledNumber(category: "camera", number: collection.count(.camera))
+                    LabelledNumber(category: "mic", number: collection.count(.microphone))
+                    LabelledNumber(category: "person.3", number: collection.count(.contacts))
+                    LabelledNumber(category: "music.note.house", number: collection.count(.mediaLibrary))
+                    LabelledNumber(category: "location", number: collection.count(.location))
+                    LabelledNumber(category: "record.circle", number: collection.count(.screenRecording))
                 }
             }
         }

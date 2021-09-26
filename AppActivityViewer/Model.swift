@@ -50,6 +50,13 @@ struct Entry: Codable, Hashable {
     var isAccess: Bool { return type == .access }
     var isNetwork: Bool { return type == .networkActivity }
 
+    var isBeginOfInterval: Bool { return kind == .intervalBegin }
+    var isEndOfInterval: Bool { return kind == .intervalEnd }
+
+    func isBeginOf(_ theCategory: Categories) -> Bool {
+        return kind == .intervalBegin && category == theCategory
+    }
+
     let accessor: AppIdentifier?
     let broadcaster: AppIdentifier? // Only present for screen recording.
 
@@ -122,6 +129,10 @@ extension Array where Element == Entry {
     }
 
     func countAccessRequests() -> Int {
-        reduce(0) { $1.isAccess ? $0 + 1 : $0 }
+        reduce(0) { $1.isAccess && $1.isBeginOfInterval ? $0 + 1 : $0 }
+    }
+
+    func count(_ category: Categories) -> Int {
+        reduce(0) { $1.isBeginOf(category) ? $0 + 1 : $0 }
     }
 }
