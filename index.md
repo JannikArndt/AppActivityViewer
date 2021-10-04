@@ -28,6 +28,9 @@ You can create a new issue [here](https://github.com/JannikArndt/AppActivityView
 
 No. The data stays on your phone. The app only tries to load the icons and names of the apps that you recorded, because the file only contains the "bundleID". This is done via the official Apple iTunes API.
 
+## Contact
+
+If you need to get in contact with the developer, you can write to apps@jannikarndt.de.
 
 ## Background
 
